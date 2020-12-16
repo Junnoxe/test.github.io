@@ -6,119 +6,113 @@
 }
 
 body{
-	font-family: 'Poppins', sans-serif;
-	/*background: #fafafa;*/
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
 	background: #ecf1f4;
 }
 
-nav{
-	width: 100%;
-	height: 75px;
-	background: #fff;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 2;
-	box-shadow: 1px 2px 8px rgba(0,0,0,.5);
+.navbar{
+	height: 70px;
+	border-bottom: 1px solid rgba(0,0,0,0.09);
+	padding: 0;
 }
 
-nav .container{
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 20px;
-	height: inherit;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+.navbar-brand img{
+	width: 180px;
+	height: 45px;
+	margin-right: 20px;
 }
 
-nav .container .logo a{
-	color: #be9d78;
-	text-decoration: none;
-	font-size: 25px;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-
-nav .container ul{
-	display: flex;
-	align-items: center;
-}
-
-nav .container ul li a{
-	padding: 20px 10px;  
-	margin: 0 5px;
-	color: #000;
-	text-decoration: none;
-	font-weight: 600;
-	font-size: 16px;
-}
-
-nav .container ul li a:hover{
-	background: #000;
-	color: #fff;
-}
-
-.row{
-	width: 100%;
-	height: 600px;
-	display: flex;
-	margin-top: 75px;
-}
-
-.row .left-column{
-	width: 50px;
-	height: 100%;
-	background: rgba(35,37,45,0.1);
-}
-
-.row .right-column{
+.navbar .container{
+	max-width: 1100px;
 	position: relative;
-	width: 100%;
-	height: 100%;
+	height: inherit;
+	margin-top: -8px;
 }
 
-.row .right-column img{
-	width: 100%;
-	height: 100%;
+.navbar .container .right-column span.fa-bars{
+	font-size: 20px;
+	padding: 5px 12px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	background: #ddd;
+	color: #888;
+	display: none;
+	cursor: pointer;
 }
 
-.row .right-column .img-bg-color{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 400px;
-	height: 100%;
-	background: #1b1b1b;
-}
-
-.row .right-column .img-bg-color .img-text{
-	position: absolute;
-	top: 50%;
-	left: 80%;
-	transform: translate(-50%, -50%);
-	width: 100%;
-	color: #fff;
-}
-
-.row .right-column .img-bg-color .img-text h1{
-	margin-bottom: 15px;
-}
-
-.row .right-column .img-bg-color .img-text p{
-	line-height: 1.5rem;
-	color: rgba(255,255,255,0.9);
-}
-
-.row .right-column .img-bg-color .img-text .btn{
-	padding: 10px 25px;
-	display: inline-block;
-	margin: 20px 0;
-	background: #fff;
-	color: #000;
-	text-decoration: none;
-	text-transform: uppercase;
+.navbar-light .navbar-nav .nav-link{
+	color: #777 !important;
 	font-weight: bold;
+	font-size: 14px;
+}
+
+.navbar-light  .navbar-nav  .nav-item.active  .nav-link{
+	color: #6EC139;
+}
+
+.nav-link{
+	text-transform: uppercase;
+}
+
+.navbar .btnLanguage{
+	position: absolute;
+    width: 40px;
+    height: auto;
+    background-color: #fff;
+    right: 0px;
+    top: 0px;
+    border-radius: 0px 0px 50% 50%;
+    padding: 15px 7px 7px 7px;
+    box-shadow: 0px 2px 5px #ddd;
+}
+
+.navbar .btnLanguage a{
+	text-decoration: none;
+}
+
+.navbar .btnLanguage a img{
+	width: 100%;
+	border-radius: 50%;
+	height: 25px;
+}
+
+
+.wrapper-carousel{
+	width: 100%;
+	position: relative;
+	background: #fff;
+	padding: 0 50px;
+	margin-top: 70px;
+}
+
+.wrapper-carousel .bar-saham{
+	position: absolute;
+	bottom: 10px;
+	right: 80px;
+	z-index: 3;
+	border-radius: 5px;
+}
+
+.wrapper-carousel .bar-saham span{
+	margin-left: 2px;
+}
+
+.wrapper-carousel .bar-saham span.text-delay{
+	color: #c4c5c6;
+    font-size: 13px;
+    display: inline-block;
+    margin-left: 5px
+}
+
+.wrapper-carousel .bar-saham label{
+	background: #054337;
+	color: #f0f643;
+	margin-bottom: 0;
+	border-radius: 5px;
+}
+
+.wrapper-carousel .carousel-item{
+	height: 100%;
 }
 
 .wrapper-fitur{
@@ -130,14 +124,6 @@ nav .container ul li a:hover{
 .wrapper-fitur .container{
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.wrapper-fitur .container a + a{
-	margin-left: 100px;
 }
 
 .wrapper-fitur .container a{
@@ -155,6 +141,11 @@ nav .container ul li a:hover{
 	margin-left: 15px;
 }
 
+.wrapper-fitur .container a div p{
+	line-height: 0;
+	margin-bottom: 0;
+}
+
 .wrapper-fitur .container a span{
 	font-size: 14px;
 }
@@ -169,7 +160,7 @@ nav .container ul li a:hover{
 }
 
 .wrapper-content .container{
-	max-width: 1200px;
+	max-width: 1100px;
 	margin: 0 auto;
 	padding: 0 20px;
 	display: flex;
@@ -192,10 +183,12 @@ nav .container ul li a:hover{
 
 .wrapper-content .container .content-left-column .link-img a{
 	text-decoration: none;
+	color: #000;
 }
 
 .wrapper-content .container .content-left-column .link-img a img{
-	width: 60%;
+	width: 55%;
+	margin-bottom: 15px;
 }
 
 .wrapper-content .container .content-right-column .pres-release{
@@ -205,12 +198,11 @@ nav .container ul li a:hover{
 }
 
 .wrapper-content .container .content-right-column .pres-release h2{
-	margin-bottom: 15px;
-	padding: 15px 0;
+	font-size: 24px;
 }
 
 .wrapper-content .container .content-right-column .pres-release li{
-	padding: 15px;
+	padding:  0 10px;
 }
 
 .wrapper-content .container .content-right-column .pres-release li a{
@@ -219,6 +211,7 @@ nav .container ul li a:hover{
 	margin-bottom: 10px;
 	display: inline-block;
 	font-size: 16px;
+	font-weight: 600;
 }
 
 .wrapper-content .container .content-right-column .pres-release li a:hover{
@@ -227,6 +220,7 @@ nav .container ul li a:hover{
 
 .wrapper-content .container .content-right-column .pres-release li p{
 	font-size: 10px;
+	line-height: 0;
 }
 
 .wrapper-content .container .content-right-column .pres-release .btn{
@@ -247,12 +241,11 @@ nav .container ul li a:hover{
 }
 
 .wrapper-content .container .content-right-column .blog h2{
-	margin-bottom: 15px;
-	padding: 15px 0;
+	font-size: 24px;
 }
 
 .wrapper-content .container .content-right-column .blog li{
-	padding: 15px;
+	padding: 0 10px;
 }
 
 .wrapper-content .container .content-right-column .blog li a{
@@ -261,6 +254,7 @@ nav .container ul li a:hover{
 	margin-bottom: 10px;
 	display: inline-block;
 	font-size: 16px;
+	font-weight: 600;
 }
 
 .wrapper-content .container .content-right-column .blog li a:hover{
@@ -325,36 +319,15 @@ footer .container ul li a:hover{
 
 /*RESPONSIVE*/
 
-@media screen and (max-width: 1000px){
-	.row .left-column{
-		width: 0;
-		height: 0;
-		background: none;
-	}
-
-	.row .right-column .img-bg-color{
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: rgba(0,0,0,0.5);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.row .right-column .img-bg-color .img-text{
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		width: 500px;
-		color: #fff;
-
-	}
-}
-
 @media screen and (max-width: 1050px){
+	/*.wrapper-fitur .container{
+		flex-wrap: wrap;
+	}*/
+
+	.wrapper-fitur .container a{
+		margin: 20px;
+	}
+
 	.wrapper-content .container{
 		flex-direction: column;
 		justify-content: center;
@@ -374,18 +347,13 @@ footer .container ul li a:hover{
 }
 
 @media screen and (max-width: 880px){
-	.wrapper-fitur .container{
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-	}
-
 	.wrapper-fitur .container a{
 		width: 100%;
+		margin: 20px auto;
 	}
 
 	.wrapper-fitur .container a + a{
-		margin: 20px auto;
+		margin-left: 0;
 	}
 }
 
@@ -405,4 +373,83 @@ footer .container ul li a:hover{
 	footer .container p{
 		margin-bottom: 15px;
 	}
+}
+
+
+@media screen and (max-width: 992px) { 
+	.navbar .container{
+		max-width: 1200px;
+	}
+
+	.navbar-brand {
+		margin-right: 0
+	}
+
+	.navbar-brand img{
+		width: 150px;
+		height: 35px;
+		margin-right: 0;
+	}
+
+	.wrapper-fitur{
+		margin-top: 60px;
+	}
+
+	.wrapper-carousel .bar-saham{
+		width: 100%;
+		left: 0;
+		right: 0;
+		bottom: -60px;
+		border-radius: 0;
+		padding: 10px;
+		margin-top: 30px;
+		background: #ccc;
+	}
+
+	.navbar .btnLanguage{
+		top: 0;
+		left: 80px;
+	}
+
+	.wrapper-carousel{
+		padding: 0;
+		background: #ccc;
+	}
+
+	.right-column{
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		height: 100%;
+		align-items: center;
+		padding-left: 20px;
+		border-bottom: 1px solid rgba(0,0,0,0.09);
+	}
+
+	.navbar .container .right-column span.fa-bars{
+		display: block;
+	}
+
+	.left-column{
+		position: fixed;
+		top: 70px;
+		left: 0;
+		width: 100%;
+		max-height: 0;
+		background: #fff;
+		z-index: 99;
+		text-align: center;
+		transition: max-height 0.3s ease-in-out;
+		overflow: hidden;
+	}
+
+	.left-column .navbar-nav li a{
+		padding: 15px;
+		border-bottom: 1px solid rgba(0,0,0,0.09);
+	}
+
 }
