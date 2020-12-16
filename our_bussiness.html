@@ -5,28 +5,41 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
 	<title>Our Bussiness</title>
-	<link rel="stylesheet" type="text/css" href="our_bussiness.css">	
+	<link rel="stylesheet" type="text/css" href="our_bussiness.css">
+	<link rel="stylesheet" type="text/css" href="index.css">	
+	<link rel="stylesheet" type="text/css" href="biodata.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
 
 <div class="wrapper">
-			<nav>
-				<div class="container">
-					<div class="logo">
-						<a href="">Adaro</a>
-					</div>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="biodata.html">Biodata</a></li>
-						<li><a href="contact_us.html">Contact Us</a></li>
-						<li><a href="our_bussiness.html">Our Bussiness</a></li>
-						<li><a href="ESG.html">ESG</a></li>
+		<nav class="navbar navbar-light navbar-expand-lg bg-white fixed-top">
+			<div class="container d-flex justify-content-between align-items-center">
+				<div class="left-column mr-auto">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="biodata.html">Biodata</a></li>
+						<li class="nav-item"><a class="nav-link" href="contact_us.html">Contact Us</a></li>
+						<li class="nav-item"><a class="nav-link" href="our_bussiness.html">Our Bussiness</a></li>
+						<li class="nav-item"><a class="nav-link" href="ESG.html">ESG</a></li>
 					</ul>
 				</div>
-			</nav>
-		</div>
-		<div class="row">
+				<div class="right-column ml-auto d-flex justify-content-between align-items-center">
+					<span class="fas fa-bars"></span>
+					<a class="navbar-brand ml-auto" href="">
+						<img src="logo_adaro.jpg" alt="">
+					</a>
+				</div>
+				<div class="btnLanguage">
+					<a href="">
+						<img src="england.jpg" alt="">
+					</a>
+				</div>
+			</div>
+		</nav>
+
+		<div class="content-images">
 			<div class="left-column"></div>
 			<div class="right-column">
 				<img src="adaro2.jpg">
@@ -196,6 +209,6 @@
 			</footer>
 		</div>
 
-
+<script src="script.js"></script>	
 </body>
 </html>
